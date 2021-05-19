@@ -38,11 +38,13 @@
   <ItemGroup>
      <Compile Include="Assets\AutoHand\Scripts\Editor\GrabPoseEditor.cs" />
      <Compile Include="Assets\AutoHand\Scripts\Editor\HandEditor.cs" />
-     <Compile Include="Assets\AutoHand\Scripts\Editor\GrabbableEditor.cs" />
-     <Compile Include="Assets\AutoHand\Scripts\Editor\FingerEditor.cs" />
-     <Compile Include="Assets\AutoHand\Scripts\Editor\AutoHandSetupWizard.cs" />
      <Compile Include="Assets\AutoHand\Scripts\Editor\HandPoseDriverEditor.cs" />
+     <Compile Include="Assets\AutoHand\Scripts\Editor\AutoHandSetupWizard.cs" />
+     <Compile Include="Assets\AutoHand\Scripts\Editor\FingerEditor.cs" />
      <Compile Include="Assets\AutoHand\Scripts\Editor\HandPoseAreaEditor.cs" />
+     <Compile Include="Assets\AutoHand\Scripts\Editor\GrabbableEditor.cs" />
+     <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\Editor\XRAutoHandAxisFingerBenderEditor.cs" />
+     <Compile Include="Assets\AutoHand\Examples\Scenes\XR\Scripts\Editor\XRAutoHandFingerBenderEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.3f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -640,8 +642,8 @@
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.XR.Management.Editor">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -649,8 +651,17 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Subsystem.Registration">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
@@ -661,59 +672,50 @@
     <Reference Include="UnityEngine.SpatialTracking">
         <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.Management">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus.Editor">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Management.Editor">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Subsystem.Registration">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Oculus.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Editor">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.OpenXR.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.OpenXR.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InputSystem">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.TestHelpers">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.OpenXR.TestHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
+    <Reference Include="Unity.XR.MockHMD.Editor">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.MockHMD.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.MockHMD">
         <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.MockHMD.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.MockHMD.Editor">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.MockHMD.Editor.dll</HintPath>
+    <Reference Include="Unity.XR.OpenXR.TestHelpers">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.OpenXR.TestHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Editor">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.OpenXR.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
         <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.Interaction.Toolkit">
-        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.dll</HintPath>
+    <Reference Include="Unity.XR.Oculus.Editor">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.OpenXR.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Oculus">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.Oculus.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
+        <HintPath>/Users/rohanjhangiani/Desktop/Project_Pasathea_Revamp/Project_Pasathea_New/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
